@@ -42,7 +42,6 @@
 				          <li><a href="#intro">Intro</a></li>
 				          <li><a href="#design">Design</a></li>
 				          <li><a href="#implementation">Implementation</a></li>
-				          <li><a href="#results">Results</a></li>
 				          <li><a href="#conclusion">Conclusion</a></li>
 				          <li><a href="#team">Team</a></li>
 				          <li><a href="#links">Links</a></li>
@@ -217,7 +216,7 @@
                             <p class="sample-text">
                             The main launch file configures and launches the project by executing the following actions:
                             </p>
-                            <ol>
+                            <ol class="ordered-list">
                                 <li>Loads params from a YAML file where we
                                     specify variables that can change in our
                                     setup. For example, the resolution of the
@@ -225,16 +224,16 @@
                                     number of time steps to plan into the future,
                                     the goals and start positions of the human and the
                                     turtlebot, how many samples to use for collision
-                                    checking with the turtlebot, and so on. </li>
-                                <li>(optionally) launches an RVIZ window by
+                                    checking with the turtlebot, and so on.</li>
+                                <li>launches an RVIZ window by
                                     including the launch file for the RVIZ
                                     visualization of the human prediction code
-                                    that we used from the paper [1]</li>
+                                    that we used from the paper.</li>
                                 <li>Starts a node running the turtlebot planner
                                     code, which takes in the results of the
                                     human prediction and publishes plans as it
-                                    calculates them</li>
-                                <li>(optionally) starts a node running the
+                                    calculates them.</li>
+                                <li>starts a node running the
                                     turtlebot controller, which takes in plans
                                     from the planner and creates control
                                     velocity inputs to the turtlebot. After we
@@ -248,7 +247,7 @@
                                     simulated human, which we used for most of the
                                     development) and predicting where the human will be
                                     in the future according to the process described in the
-                                    paper [1].</li>
+                                    paper.</li>
                             </ol>
                             <p class="sample-text">
                             In addition to the main launch file we also used
@@ -259,18 +258,18 @@
                             the same time. The perception launch file does the
                             following actions:
                             </p>
-                            <ol>
+                            <ol class="ordered-list">
                                 <li>Loads the same parameters YAML file as the
                                     previous launch file so all nodes have
-                                    access to the same set of parameters</li>
+                                    access to the same set of parameters.</li>
                                 <li>Reuses and modifies code from the AR
                                     tracking lab (lab4) to launch a usb_cam
                                     node to control the camera and an image_srv
                                     service so that we can call the service to
-                                    access the last frame from the camera</li>
+                                    access the last frame from the camera.</li>
                                 <li>Launches an object detection node (which is
-                                    based off of this project
-                                    https://github.com/datitran/object_detector_app).</li>
+                                    based off of this project <a
+                                href="https://github.com/datitran/object_detector_app">https://github.com/datitran/object_detector_app<a>.).</li>
                             </ol>
                             <h3>Homography and Camera Service</h3>
                                 <p class="sample-text">
@@ -312,7 +311,7 @@
                                 each time step in the future (up until some
                                 configurable end time step)
                                 </p>
-                            <h3>A-Start Search-based Planning</h3>
+                            <h3>A-Star Search-based Planning</h3>
                                 <p class="sample-text">
                                 In the paper [1] the robots used FaSTrack for
                                 planning, which took in the time-varying
@@ -363,7 +362,12 @@
                                 turtlebot is in a valid position.
                                     </figcaption>
                                 </figure>
-                                INSERT CODE PIECE
+                                <figure>
+                                    <img src="img/code_snippet.png" width="500"
+                                    height="200">
+                                    <figcaption><b>Figure 3</b> - Type Defintion for the Generated Plan
+                                    </figcaption>
+                                </figure>
                             <h3>Control</h3>
                                 <p class="sample-text">
                                 For actually controlling the turtlebot we used
@@ -388,19 +392,12 @@
                                 </p>
                                 <figure>
                                     <img src="img/System_architecture.png" width="800" height="100">
-                                    <figcaption><b>Figure 3</b> - An overview of the system architecture
+                                    <figcaption><b>Figure 4</b> - An overview of the system architecture
                                     </figcaption>
                                 </figure>
 				</div>
 			</section>
 			<!-- End Implementation Area -->
-			<!-- Start Results Area -->
-			<section class="sample-text-area" id="results">
-				<div class="container">
-					<h1>Results</h1>
-				</div>
-			</section>
-			<!-- End Results Area -->
 			<!-- Start Conclusion Area -->
 			<section class="sample-text-area" id="conclusion">
 				<div class="container">
@@ -410,31 +407,42 @@
                     modules independently, and each of these subsystems worked
                     well.
                     </p>
+                    <h3>Perception</h3>
                     <p class="sample-text">
-                    <b>Perception:</b>   We were able to reliably draw a bounding
+                    We were able to reliably draw a bounding
                     box around the human and translate that to a position on
                     the floor grid using our computed homography between the
                     camera and floor coordinates. We also successfully used the
                     turtlebot’s odometry to track its position and orientation.
                     </p>
-                    <img src="img/perception.png" width="830" height="500" style="vertical-align:middle">
+                    <figure>
+                        <img src="img/perception.png" width="830" height="500" style="vertical-align:middle">
+                        <figcaption><b>Figure 5</b> - Human and Turtlebot Bounding Boxes through Perception Algorithm
+                    </figure>
+                    <h3>Human Prediction</h3>
                     <p class="sample-text">
-                    <b>Human prediction:</b>   We used the code released from the
+                    We used the code released from the
                     original paper to set custom human and goal states and
                     predict human occupancy grids multiple timesteps into the
                     future.
                     </p>
+                    <h3>Path Planning</h3>
                     <p class="sample-text">
-                    <b>Planning:</b>   We used A* search to quickly create a plan for
+                    We used A* search to quickly create a plan for
                     the turtlebot that probabilistically avoids collision with
                     the human.
                     </p>
-                    <img src="img/rviz_image.png" width="830" height="500" align="middle">
+                    <figure>
+                        <img src="img/rviz_image.png" width="830" height="500" align="middle">
+                        <figcaption><b>Figure 6</b> - Successful Plan Generated for Probabilistically Planning Around Human
+                    </figure>
+                    <h3>Control</h3>
                     <p class="sample-text">
-                    <b>Control:</b>   We used a PD controller to compute controls
+                    We used a PD controller to compute controls
                     that would follow the turtlebot’s current plan and
                     transmitted these controls to the turtlebot.
                     </p>
+                    <h3>Integration</h3>
                     <p class="sample-text">
                     We experienced difficulties when connecting all of these
                     systems due to the limited amount of computational power we
@@ -465,7 +473,10 @@
                     would have been able to successfully connect all of our
                     modules into a complete real-time system.
                     </p>
-                    <img src="img/rviz_gif.gif" width="830" height="500">
+                    <figure>
+                        <img src="img/rviz_gif.gif" width="830" height="500">
+                        <figcaption><b>Figure 7</b> - Simulated System in RViz
+                    </figure>
 				</div>
 			</section>
 			<!-- End Conclusion Area -->
@@ -513,167 +524,6 @@
 					</div>
                 </div>
 			<!-- End Team Area -->
-			<!-- Start we-offer Area -->
-			<section class="we-offer-area section-gap" id="intro">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">Our Offered Services</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s1.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Unlimited Colors</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s3.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Endless Support</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s2.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Smart Security</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s4.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Smart Security</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-						</div>												
-					</div>
-				</div>	
-			</section>
-			<!-- End we-offer Area -->
-			<!-- Start Button -->
-			<section class="button-area">
-				<div class="container border-top-generic">
-					<h3 class="text-heading">Sample Buttons</h3>
-					<div class="button-group-area">
-						<a href="#" class="genric-btn default">Default</a>
-						<a href="#" class="genric-btn primary">Primary</a>
-						<a href="#" class="genric-btn success">Success</a>
-						<a href="#" class="genric-btn info">Info</a>
-						<a href="#" class="genric-btn warning">Warning</a>
-						<a href="#" class="genric-btn danger">Danger</a>
-						<a href="#" class="genric-btn link">Link</a>
-						<a href="#" class="genric-btn disable">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border">Default</a>
-						<a href="#" class="genric-btn primary-border">Primary</a>
-						<a href="#" class="genric-btn success-border">Success</a>
-						<a href="#" class="genric-btn info-border">Info</a>
-						<a href="#" class="genric-btn warning-border">Warning</a>
-						<a href="#" class="genric-btn danger-border">Danger</a>
-						<a href="#" class="genric-btn link-border">Link</a>
-						<a href="#" class="genric-btn disable">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default radius">Default</a>
-						<a href="#" class="genric-btn primary radius">Primary</a>
-						<a href="#" class="genric-btn success radius">Success</a>
-						<a href="#" class="genric-btn info radius">Info</a>
-						<a href="#" class="genric-btn warning radius">Warning</a>
-						<a href="#" class="genric-btn danger radius">Danger</a>
-						<a href="#" class="genric-btn link radius">Link</a>
-						<a href="#" class="genric-btn disable radius">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border radius">Default</a>
-						<a href="#" class="genric-btn primary-border radius">Primary</a>
-						<a href="#" class="genric-btn success-border radius">Success</a>
-						<a href="#" class="genric-btn info-border radius">Info</a>
-						<a href="#" class="genric-btn warning-border radius">Warning</a>
-						<a href="#" class="genric-btn danger-border radius">Danger</a>
-						<a href="#" class="genric-btn link-border radius">Link</a>
-						<a href="#" class="genric-btn disable radius">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default circle">Default</a>
-						<a href="#" class="genric-btn primary circle">Primary</a>
-						<a href="#" class="genric-btn success circle">Success</a>
-						<a href="#" class="genric-btn info circle">Info</a>
-						<a href="#" class="genric-btn warning circle">Warning</a>
-						<a href="#" class="genric-btn danger circle">Danger</a>
-						<a href="#" class="genric-btn link circle">Link</a>
-						<a href="#" class="genric-btn disable circle">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border circle">Default</a>
-						<a href="#" class="genric-btn primary-border circle">Primary</a>
-						<a href="#" class="genric-btn success-border circle">Success</a>
-						<a href="#" class="genric-btn info-border circle">Info</a>
-						<a href="#" class="genric-btn warning-border circle">Warning</a>
-						<a href="#" class="genric-btn danger-border circle">Danger</a>
-						<a href="#" class="genric-btn link-border circle">Link</a>
-						<a href="#" class="genric-btn disable circle">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn primary circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn success circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn info circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn warning circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn danger circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn primary-border circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn success-border circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn info-border circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn warning-border circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn danger-border circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn primary e-large">Extra Large</a>
-						<a href="#" class="genric-btn success large">Large</a>
-						<a href="#" class="genric-btn primary">Default</a>
-						<a href="#" class="genric-btn success medium">Medium</a>
-						<a href="#" class="genric-btn primary small">Small</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn primary-border e-large">Extra Large</a>
-						<a href="#" class="genric-btn success-border large">Large</a>
-						<a href="#" class="genric-btn primary-border">Default</a>
-						<a href="#" class="genric-btn success-border medium">Medium</a>
-						<a href="#" class="genric-btn primary-border small">Small</a>
-					</div>
-				</div>
-			</section>
-			<!-- End Button -->
 			<!-- Start Align Area -->
 			<div class="whole-wrap">
 				<div class="container">
