@@ -4,9 +4,9 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="img/elements/fav.png">
 		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
+		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
 		<meta name="description" content="">
 		<!-- Meta Keyword -->
@@ -14,586 +14,551 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
+		<title>Robot-Human Path Planning</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
 			============================================= -->
 			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/nice-select.css">			
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>
 
 			  <header id="header" id="home">
 			    <div class="container">
-			    	<div class="row align-items-center justify-content-between d-flex">
+			    	<div class="row align-items-center d-flex">
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
-				          <li><a href="#offer">We Offer</a></li>
-				          <li><a href="#about">About</a></li>
-				          <li><a href="#project">Project</a></li>
-				          <li><a href="#price">Price</a></li>
-<!-- 				          <li><a href="#blog">Blog</a></li> -->
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				              <li><a href="generic.html">Generic</a></li>
-				              <li><a href="elements.html">Elements</a></li>
-				            </ul>
-				          </li>
+				          <li><a href="#intro">Intro</a></li>
+				          <li><a href="#design">Design</a></li>
+				          <li><a href="#implementation">Implementation</a></li>
+				          <li><a href="#conclusion">Conclusion</a></li>
+				          <li><a href="#team">Team</a></li>
+				          <li><a href="#links">Links</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
 
-
-			<!-- start banner Area -->
+			<!-- Start banner Area -->
 			<section class="banner-area" id="home">	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-7">
 							<h1>
-								All you want is here				
+								Robot-Human Path Planning				
 							</h1>
 							<p class="pt-20 pb-20">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+								Robot Path Planning Around Dynamic Obstacles.
 							</p>
 						</div>											
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- End banner Area -->
 
-			<!-- Start we-offer Area -->
-			<section class="we-offer-area section-gap" id="offer">
+			<!-- Start Introduction Area -->
+			<section class="sample-text-area" id="intro">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">Our Offered Services</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s1.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Unlimited Colors</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s3.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Endless Support</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s2.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Smart Security</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-							<div class="single-offer d-flex flex-row pb-30">
-								<div class="icon">
-									<img src="img/s4.png" alt="">
-								</div>
-								<div class="desc">
-									<a href="#"><h4>Smart Security</h4></a>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.
-									</p>
-								</div>
-							</div>
-						</div>												
-					</div>
-				</div>	
-			</section>
-			<!-- End we-offer Area -->
-			
-	
-			<!-- Start home-video Area -->
-			<section class="home-video-area" id="about">
-				<div class="container-fluid">
-					<div class="row justify-content-end align-items-center">
-						<div class="col-lg-4 no-padding video-right">
-							<p class="top-title">Tutorial for beginner</p>
-							<h1>Watch tutorial <br>
-							Video of SaaS to start</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.
-							</p>
-						</div>
-						<section class="video-area col-lg-6">
-							<div class="overlay overlay-bg"></div>
-							<div class="container">
-								<div class="video-content">
-									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img src="img/play-btn.png" alt=""></a>
-								</div>
-							</div>
-						</section>											
-					</div>
-				</div>	
-			</section>
-			<!-- End home-aboutus Area -->
+					<h1>Introduction</h1>
+					<p class="sample-text">
+                    As robot technology proliferates in manufacturing, on the road, and other
+                    settings that humans currently occupy, it is becoming increasingly important to
+                    make robots capable of safely and efficiently performing their assigned tasks
+                    without interfering with humans. To do so, a robot can have a model for the
+                    human’s behavior, use that model to predict the human’s actions, and then plan
+                    its own actions accordingly to prevent interfering or colliding with the human.
+                    However, the robot’s human model will always have error because humans act in
+                    complex and often unpredictable ways. Instead of blindly trusting the human
+                    model, it would be better for the robot to adjust its confidence in the model
+                    in real time by using inference based on the human’s actual behavior. This way,
+                    the robot could adjust its behavior based on how confident it is in its human
+                    prediction.
+					</p>
 
+					<p class="sample-text">
+                    This method of reasoning about the robot’s confidence in its human model was
+                    developed in the paper “Probabilistically Safe Robot Planning with
+                    Confidence-Based Human Predictions,” from Professor Anca Dragan’s and Professor
+                    Claire Tomlin’s research groups at UC Berkeley. Our goal for this project was
+                    to implement this technique for turtlebots. Given an environment with a
+                    turtlebot and a human, where each agent has its own goal state, the turtlebot
+                    should be able to safely reach its destination while probabilistically avoiding
+                    collision with the human by updating its confidence in its human model based on
+                    the human’s true trajectory. To have a reasonable scope for this project, we
+                    decided to focus on the perception through planning stages. In other words, we
+                    aim to detect the human’s and turtlebot’s positions, predict the human’s future
+                    path, and have the turtlebot create safe plans as the human navigates the
+                    environment.
+					</p>
 
-			<!-- Start home-aboutus Area -->
-			<section class="home-aboutus-area">
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center">
-						<div class="col-lg-8 no-padding about-left">
-							<img class="img-fluid" src="img/about-bg.jpg" alt="">
-						</div>
-						<div class="col-lg-4 no-padding about-right">
-							<p class="top-title">24/7 Support system</p>
-							<h1 class="text-white">A Handy support <br>
-							System for the Software</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.
-							</p>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End home-aboutus Area -->
-			
+					<p class="sample-text">
+                    To achieve this goal, we needed to address several challenges. How do we
+                    accurately and reliably detect the human’s and turtlebot’s current positions?
+                    How is the human model used to predict the human’s future path? How can the
+                    turtlebot plan a safe path to its goal using the human’s predicted trajectory?
+                    How does the turtlebot apply controls to follow this path? How do these
+                    subtasks work together in real time? Our approaches to answering questions are
+                    detailed in the sections below.
+					</p>
 
-			<!-- Start protfolio Area -->
-			<section class="protfolio-area section-gap" id="project">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">Our Offered Services</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-8 single-portfolio">
-						  <img class="image img-fluid" src="img/p1.jpg" alt="">
-						  <a href="img/p1.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>
-						<div class="col-lg-4 single-portfolio">
-						  <img class="image img-fluid" src="img/p2.jpg" alt="">
-						  <a href="img/p2.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>
-						<div class="col-lg-4 single-portfolio">
-						  <img class="image img-fluid" src="img/p3.jpg" alt="">
-						  <a href="img/p3.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>
-						<div class="col-lg-8 single-portfolio">
-						  <img class="image img-fluid" src="img/p4.jpg" alt="">
-						  <a href="img/p4.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>
-						<div class="col-lg-6 single-portfolio">
-						  <img class="image img-fluid" src="img/p5.jpg" alt="">
-						  <a href="img/p5.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>
-						<div class="col-lg-6 single-portfolio">
-						  <img class="image img-fluid" src="img/p6.jpg" alt="">
-						  <a href="img/p6.jpg" class="img-pop-up">	
-							  <div class="middle">
-							    <div class="text"><span class="lnr lnr-frame-expand"></span></div>
-							  </div>
-						  </a>
-						</div>						
-					</div>
-				</div>	
+					<p class="sample-text">
+                    Implementing a system that allows the robot to quantify and act on its
+                    uncertainty about the human model is useful in any situation in which humans
+                    and robots are operating in the same physical space. For example, these
+                    situations arise in manufacturing settings where robots and humans cooperate to
+                    assemble things, and when autonomous vehicles must plan trajectories based on
+                    their predictions of human-driven cars’ trajectories.
+					</p>
+				</div>
 			</section>
-			<!-- End protfolio Area -->			
+			<!-- End Introduction Area -->
 
-			<!-- Start callto-action Area -->
-			<section class="callto-action-area relative section-gap">
-				<div class="overlay overlay-bg"></div>	
+			<!-- Start Design Area -->
+			<section class="sample-text-area" id="design">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content col-lg-9">
-							<div class="title text-center">
-								<h1 class="mb-10 text-white">Got Impressed to our features</h1>
-								<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-								<a class="primary-btn" href="#">Request Free Demo</a>
-							</div>
-						</div>
-					</div>	
-				</div>	
-			</section>
-			<!-- End calto-action Area -->
-			
-		
-			<!-- Start price Area -->
-			<section class="price-area section-gap" id="price">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Choose the Perfect Plan for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div class="top-left">
-										<h4>Standard</h4>
-										<p>For the <br>individuals</p>
-									</div>
-									<div class="top-right">
-										<h1>£199</h1>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<p>
-										“Few would argue that, despite the advancements
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>2.5 GB Free Photos</li>
-										<li>Secure Online Transfer Indeed</li>
-										<li>Unlimited Styles for interface</li>
-										<li>Reliable Customer Service</li>
-										<li>Manual Backup Provided</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>								
-							</div> 
-						</div>
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div class="top-left">
-										<h4>Business</h4>
-										<p>For the <br>small Company</p>
-									</div>
-									<div class="top-right">
-										<h1>£399</h1>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<p>
-										“Few would argue that, despite the advancements
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>2.5 GB Free Photos</li>
-										<li>Secure Online Transfer Indeed</li>
-										<li>Unlimited Styles for interface</li>
-										<li>Reliable Customer Service</li>
-										<li>Manual Backup Provided</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>								
-							</div> 
-						</div>	
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div class="top-left">
-										<h4>Ultimate</h4>
-										<p>For the <br>large Company</p>
-									</div>
-									<div class="top-right">
-										<h1>£499</h1>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<p>
-										“Few would argue that, despite the advancements
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>2.5 GB Free Photos</li>
-										<li>Secure Online Transfer Indeed</li>
-										<li>Unlimited Styles for interface</li>
-										<li>Reliable Customer Service</li>
-										<li>Manual Backup Provided</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>								
-							</div> 
-						</div>							
-																						
-					</div>
-				</div>	
-			</section>
-			<!-- End price Area -->
+					<h1>Design</h1>
+					<p class="sample-text">
+                    To succeed, our system had to fulfill certain requirements. It must accurately
+                    and robustly detect the positions of the turtlebot and human, even in the
+                    presence of other objects in the scene. The robot must assume some model of the
+                    human and use this model to predict the human’s future trajectory in the form
+                    of probability occupancy grids over the state space. The robot must update its
+                    confidence in this human model using Bayesian updates and the human’s true
+                    trajectory. The robot must create plans to reach its goal from the current
+                    state while avoiding collisions with the human with some probability threshold.
+                    The robot must apply controls to reliable stick to its planned trajectory.
+                    Moreover, all of these subtasks need to be fulfilled in real time in order for
+                    the turtlebot to be able to quickly re-predict the human’s behavior, replan,
+                    and follow the most recent plan using the human’s most recent state.
+					</p>
 
-			<!-- Start testomial Area -->
-			<section class="testomial-area section-gap">
+					<p class="sample-text">
+                    To achieve this functionality, we used four modules for our system: perception,
+                    human prediction, planning, and control.
+					</p>
+
+					<p class="sample-text">
+                    <b>Perception:</b>   Given a global view of the entire
+                    environment using a camera, we utilize computer vision/deep
+                    learning techniques to detect the human’s position. We also
+                    use the turtlebot’s odometry to keep track of its current
+                    state.
+					</p>
+
+					<p class="sample-text">
+                    <b>Human prediction:</b>   Given the human’s current and goal
+                    positions, we use a linear human model, which assumes the
+                    human will walk in a straight line from its current
+                    position to the goal, to predict the human’s future
+                    trajectory in the form of probability occupancy grids. We
+                    adjust our confidence in this human model using Bayesian
+                    updates over the human “rationality” parameter, utilizing
+                    the human’s true detected trajectory.
+					</p>
+
+					<p class="sample-text">
+                    <b>Planning:</b>   Given the turtlebot’s current and goal
+                    positions, as well as the predicted human occupancy grids,
+                    we create a plan for the turtlebot that avoids colliding
+                    with the human with some fixed probability threshold.
+					</p>
+
+					<p class="sample-text">
+                    <b>Control:</b>   Given the turtlebot’s most recent plan, we
+                    use the turtlebot’s current position to apply controls to
+                    match this plan as reliably as possible.
+					</p>
+
+					<p class="sample-text">
+                    We used a modular design such that each of these modules received specified
+                    inputs from the other modules and return specified outputs. This allowed us to
+                    develop and test these modules independently.
+					</p>
+
+					<p class="sample-text">
+                    When designing this system, we had to consider the limitations of available
+                    hardware, which proved to be significant given the real-time requirements of
+                    our system. Our perception system reliably detected the human’s position up to
+                    industry standard, but its speed was severely limited by the amount of
+                    computational power we had available, resulting in delays that affected the
+                    other modules. For planning, we needed to use an algorithm that would use the
+                    predicted human occupancy grids to quickly find a viable path and immediately
+                    replan based on new state information. For the control module, we required a
+                    way for the turtlebot to smoothly and closely follow a discretized trajectory,
+                    as well as switch to following a new plan upon receiving it from the planning
+                    module.
+					</p>
+				</div>
+			</section>
+			<!-- End Design Area -->
+			<!-- Start Implementation Area -->
+			<section class="sample-text-area" id="implementation">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Testimonial from our Clients</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
+					<h1>Implementation</h1>
+                        <h2>Hardware</h2>
+                            <p class="sample-text">
+                            We implemented our project using a Microsoft 1920x1080 HD webcam and a turtlebot.
+                            </p>
+                        <h2>Software</h2>
+                            <h3>Launch File</h3>
+                            <p class="sample-text">
+                            The main launch file configures and launches the project by executing the following actions:
+                            </p>
+                            <ol class="ordered-list">
+                                <li>Loads params from a YAML file where we
+                                    specify variables that can change in our
+                                    setup. For example, the resolution of the
+                                    occupancy grid that we use for planning, the
+                                    number of time steps to plan into the future,
+                                    the goals and start positions of the human and the
+                                    turtlebot, how many samples to use for collision
+                                    checking with the turtlebot, and so on.</li>
+                                <li>launches an RVIZ window by
+                                    including the launch file for the RVIZ
+                                    visualization of the human prediction code
+                                    that we used from the paper.</li>
+                                <li>Starts a node running the turtlebot planner
+                                    code, which takes in the results of the
+                                    human prediction and publishes plans as it
+                                    calculates them.</li>
+                                <li>starts a node running the
+                                    turtlebot controller, which takes in plans
+                                    from the planner and creates control
+                                    velocity inputs to the turtlebot. After we
+                                    decided to work mostly in simulation we stopped
+                                    developing the turtlebot control node.</li>
+                                <li>Starts the human prediction service by
+                                    including launch file from the human
+                                    prediction code that we used from the
+                                    paper. This code works by taking in the human
+                                    position from the perception service (or from a
+                                    simulated human, which we used for most of the
+                                    development) and predicting where the human will be
+                                    in the future according to the process described in the
+                                    paper.</li>
+                            </ol>
+                            <p class="sample-text">
+                            In addition to the main launch file we also used
+                            another launch file to control the camera and
+                            perception module. We faced long startup times for
+                            both launch files and thought that we could achieve
+                            some level of parallelization by starting both at
+                            the same time. The perception launch file does the
+                            following actions:
+                            </p>
+                            <ol class="ordered-list">
+                                <li>Loads the same parameters YAML file as the
+                                    previous launch file so all nodes have
+                                    access to the same set of parameters.</li>
+                                <li>Reuses and modifies code from the AR
+                                    tracking lab (lab4) to launch a usb_cam
+                                    node to control the camera and an image_srv
+                                    service so that we can call the service to
+                                    access the last frame from the camera.</li>
+                                <li>Launches an object detection node (which is
+                                    based off of this project <a
+                                href="https://github.com/datitran/object_detector_app">https://github.com/datitran/object_detector_app<a>.).</li>
+                            </ol>
+                            <h3>Homography and Camera Service</h3>
+                                <p class="sample-text">
+                                We added on to the code from the AR Tracking
+                                lab (lab 4) and created a grid in the “working
+                                area” of our floor space. We then used this
+                                code and the grid to compute a homography
+                                between the camera coordinates and the floor
+                                coordinates by manually specifying point
+                                correspondences. We saved this homography in a
+                                constants file and recomputed it whenever we
+                                felt that the coordinates were not accurate.
+                                The camera service is also adapted from lab 4
+                                and provides a service that returns the last
+                                frame from the camera’s video stream
+                                </p>
+                            <h3>Human Detection</h3>
+                                <p class="sample-text">
+                                The human detection node node gets the last
+                                image from the service, uses a pre-trained
+                                MobileNet model to output the bounding boxes
+                                and probabilities for all classes, and then
+                                publishes the coordinates of the “highest
+                                rated” or most confident bounding box for a
+                                human in the scene. The original code simply
+                                ran inference on a stream from a webcam so we
+                                had to adapt it for ROS, ignore everything
+                                except humans, find the highest rated one and
+                                then transform it to floor coordinates using a
+                                homography before publishing these coordinates.
+                                </p>
+                            <h3>Human Prediction</h3>
+                                <p class="sample-text">
+                                For the human prediction module we mostly used
+                                the code provided from the paper in [1]. It
+                                takes in the positions of the human and returns
+                                a series of occupancy grids representing the
+                                predicted heatmap of locations of the human for
+                                each time step in the future (up until some
+                                configurable end time step)
+                                </p>
+                            <h3>A-Star Search-based Planning</h3>
+                                <p class="sample-text">
+                                In the paper [1] the robots used FaSTrack for
+                                planning, which took in the time-varying
+                                sequence of occupancy grids that was returned
+                                by the human prediction module and used them to
+                                compute robust plans. We thought it would be
+                                easier to implement a custom planner using A*
+                                search over the time varying sequence of
+                                occupancy grids so we wrote a custom A* search
+                                node for this module. The basic idea is that we
+                                turned the occupancy grids into a 3D matrix of
+                                shape (length) * (width) * (number of
+                                timesteps) and then performed a search over
+                                this space, using as a heuristic the manhattan
+                                distance between the current position and the
+                                goal state. In addition, when exploring the
+                                “neighbors” of a particular space we enforced
+                                two constraints: firstly that the space was
+                                “forward” in time to ensure that the plan was
+                                actually achievable in the real world where
+                                time only flows forward, and secondly that the
+                                neighboring space was unoccupied. To test if
+                                the space was occupied we used a Monte Carlo
+                                simulation (essentially throwing darts based on
+                                the occupancy probabilities) and checked how
+                                many of them landed within a configurable
+                                turtlebot radius. If this value was above a
+                                threshold we counted the space as a collision
+                                and did not allow the A* search to include the
+                                space in its plan. This module publishes the
+                                plan as a series of waypoints - one for each
+                                time step - in a message type we made called a
+                                plan (described below)
+                                </p>
+                                <figure>
+                                    <img src="img/a-star.png" width="740" height="500">
+                                    <figcaption><b>Figure 1</b> - Visualization of the 3 dimensional A* search
+                                used as a planning algorithm. The “y” dimension
+                                is time (in timesteps) while the “x” and “z”
+                                directions are physical coordinates in the
+                                occupancy grid
+                                     </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/numerical-integration.png" width="500" height="500">
+                                    <figcaption><b>Figure 2</b> - Visualization of the numerical integration
+                                method used for determining whether or not the
+                                turtlebot is in a valid position.
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/code_snippet.png" width="500"
+                                    height="200">
+                                    <figcaption><b>Figure 3</b> - Type Defintion for the Generated Plan
+                                    </figcaption>
+                                </figure>
+                            <h3>Control</h3>
+                                <p class="sample-text">
+                                For actually controlling the turtlebot we used
+                                an approach similar to lab 6 where we measure
+                                the error between the current state (from the
+                                turtlebot’s odometry) and the goal state (from
+                                the plan) and provide a control input that
+                                moves the turtlebot closer to the goal state.
+                                In order to follow the plans as they were
+                                provided we set the first waypoint of the most
+                                recent plan as the current goal and replaced it
+                                with the next waypoint when the robot moved to
+                                be within a threshold of the current goal. When
+                                a new plan was published we replaced any
+                                waypoints with the waypoints from the new plan
+                                to ensure that the robot always acted on the
+                                most recent information. As we switched the
+                                goal of the project to be focused on getting
+                                everything working in simulation this module
+                                was reasonably buggy and did not always provide
+                                the correct control inputs to the turtlebot.
+                                </p>
+                                <figure>
+                                    <img src="img/System_architecture.png" width="800" height="100">
+                                    <figcaption><b>Figure 4</b> - An overview of the system architecture
+                                    </figcaption>
+                                </figure>
+				</div>
+			</section>
+			<!-- End Implementation Area -->
+			<!-- Start Conclusion Area -->
+			<section class="sample-text-area" id="conclusion">
+				<div class="container">
+					<h1>Conclusion</h1>
+                    <p class="sample-text">
+                    We tested the perception, human prediction, and planning
+                    modules independently, and each of these subsystems worked
+                    well.
+                    </p>
+                    <h3>Perception</h3>
+                    <p class="sample-text">
+                    We were able to reliably draw a bounding
+                    box around the human and translate that to a position on
+                    the floor grid using our computed homography between the
+                    camera and floor coordinates. We also successfully used the
+                    turtlebot’s odometry to track its position and orientation.
+                    </p>
+                    <figure>
+                        <img src="img/perception.png" width="830" height="500" style="vertical-align:middle">
+                        <figcaption><b>Figure 5</b> - Human and Turtlebot Bounding Boxes through Perception Algorithm
+                    </figure>
+                    <h3>Human Prediction</h3>
+                    <p class="sample-text">
+                    We used the code released from the
+                    original paper to set custom human and goal states and
+                    predict human occupancy grids multiple timesteps into the
+                    future.
+                    </p>
+                    <h3>Path Planning</h3>
+                    <p class="sample-text">
+                    We used A* search to quickly create a plan for
+                    the turtlebot that probabilistically avoids collision with
+                    the human.
+                    </p>
+                    <figure>
+                        <img src="img/rviz_image.png" width="830" height="500" align="middle">
+                        <figcaption><b>Figure 6</b> - Successful Plan Generated for Probabilistically Planning Around Human
+                    </figure>
+                    <h3>Control</h3>
+                    <p class="sample-text">
+                    We used a PD controller to compute controls
+                    that would follow the turtlebot’s current plan and
+                    transmitted these controls to the turtlebot.
+                    </p>
+                    <h3>Integration</h3>
+                    <p class="sample-text">
+                    We experienced difficulties when connecting all of these
+                    systems due to the limited amount of computational power we
+                    had available, which resulted in time delays that
+                    complicated the real time nature of our system. We
+                    connected the human perception, turtlebot odometry, human
+                    prediction, and planning modules together, making it
+                    possible to detect the human position, plan the human’s
+                    predicted trajectory, and generate a plan for the
+                    turtlebot. However, this system ran very slowly,
+                    particularly due to the complexity of the computer vision
+                    human perception system. Therefore, we decided to focus on
+                    the human prediction and planning modules.
+                    </p>
+                    <p class="sample-text">
+                    The video below shows our simulated system in RViz. The
+                    tall red rectangular prism is the human, the red dots are
+                    the human’s goals, the grids around the human extending
+                    upwards are the predicted human probability occupancy
+                    grids, and the green dots are waypoints along the
+                    turtlebots plans. As the human moves, the occupancy grids
+                    predict the human walking in a straight line toward one of
+                    its goals. Unfortunately, due to the time delays in the
+                    system, the turtlebot is unable to plan around the human in
+                    real time. However, you can see the plans avoiding the
+                    human delayed by a few seconds. This suggests that if we
+                    had access to more powerful computational hardware, we
+                    would have been able to successfully connect all of our
+                    modules into a complete real-time system.
+                    </p>
+                    <figure>
+                        <img src="img/rviz_gif.gif" width="830" height="500">
+                        <figcaption><b>Figure 7</b> - Simulated System in RViz
+                    </figure>
+				</div>
+			</section>
+			<!-- End Conclusion Area -->
+			<!-- Start Team Area -->
+			<section class="sample-text-area" id="team">
+				<div class="container">
+					<div class="section-top-border">
+						<h1>Team</h1>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="single-defination">
+									<h4 class="mb-20">Eli Bronstein</h4>
+                                    <p>Researched and Implemented Path Planning Algorithm</p>
+                                    <p>Eli is a 4th year EECS major.
+                                    He has been doing research in Prof. Anca
+                                    Dragan’s InterACT lab for the past year,
+                                    focusing on game-theoretic hierarchical
+                                    planning for autonomous vehicles.</p>
+								</div>
 							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="active-tstimonial-carusel">
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
+							<div class="col-md-4">
+								<div class="single-defination">
+									<h4 class="mb-20">Amit Talreja</h4>
+									<p>Perception Algorithm and Path Planning Integration</p>
+									<p>Amit is a 4th year EECS major. He has
+                                    research experience most recently in
+                                    AutoLab, working on 6D pose registration
+                                    using depth data. He has extensive
+                                    experience working with depth sensing and
+                                    FIRST robotics.</p>
+								</div>
 							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
+							<div class="col-md-4">
+								<div class="single-defination">
+									<h4 class="mb-20">Omkar Salpekar</h4>
+                                    <p>Perception Performance/Integration and Website/Slides</p>
+                                    <p>Omkar is a 4th year EECS major.
+                                    He has been doing research at the RISELab
+                                    under Prof. Ion Stoica and Prof. Anthony
+                                    Joseph on a high-performance distributed
+                                    processing engine for large-scale data.</p>
+								</div>
 							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>	
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>															
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>														
 						</div>
 					</div>
-				</div>	
-			</section>
-			<!-- End testomial Area -->
-			
-			<!-- Start latest-blog Area -->
-			<section class="latest-blog-area section-gap" id="blog">
+                </div>
+			<!-- End Team Area -->
+
+			<!-- Start Links Area -->
+			<section class="sample-text-area" id="links">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Latest News from our Blog</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="col-lg-6 single-blog">
-							<img class="img-fluid" src="img/b1.jpg" alt="">
-							<ul class="tags">
-								<li><a href="#">Travel</a></li>
-								<li><a href="#">Life style</a></li>
-							</ul>
-							<a href="#"><h4>Portable latest Fashion for young women</h4></a>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-							</p>
-							<p class="post-date">31st January, 2018</p>
-						</div>
-						<div class="col-lg-6 single-blog">
-							<img class="img-fluid" src="img/b2.jpg" alt="">
-							<ul class="tags">
-								<li><a href="#">Travel</a></li>
-								<li><a href="#">Life style</a></li>
-							</ul>
-							<a href="#"><h4>Portable latest Fashion for young women</h4></a>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-							</p>
-							<p class="post-date">31st January, 2018</p>
-						</div>						
-					</div>
-				</div>	
-			</section>
-			<!-- End latest-blog Area -->
-			
+					<h1>Links and Citations</h1>
+                    <p class="sample-text">
+                    Human Prediction Code from Paper: <a href="https://github.com/ebronstein/pedestrian_prediction">https://github.com/ebronstein/pedestrian_prediction</a> 
+                    </p>
+                    <p class="sample-text">
+                    Pedestrian Prediction ROS Wrapper: <a href="https://github.com/ebronstein/crazyflie_human">https://github.com/ebronstein/crazyflie_human</a> 
+                    </p>
+                    <p class="sample-text">
+                    Integrated System: <a href="https://github.com/atalreja/safe_turtlebot">https://github.com/atalreja/safe_turtlebot</a> 
+                    </p>
+                    <p class="sample-text">
+                    Object Detection: <a href="https://github.com/datitran/object_detector_app">https://github.com/datitran/object_detector_app</a> 
+                    </p>
+                    <p class="sample-text">
+                    [1] Fisac, Jaime F., et al. "Probabilistically Safe Robot Planning with Confidence-Based Human Predictions." arXiv preprint arXiv:1806.00109 (2018).
+                    </p>
+
+                </div>
+            </section>
+			<!-- Start Links Area -->
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-3  col-md-12">
-							<div class="single-footer-widget">
-								<h6>Top Products</h6>
-								<ul class="footer-nav">
-									<li><a href="#">Managed Website</a></li>
-									<li><a href="#">Manage Reputation</a></li>
-									<li><a href="#">Power Tools</a></li>
-									<li><a href="#">Marketing Service</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-6  col-md-12">
-							<div class="single-footer-widget newsletter">
-								<h6>Newsletter</h6>
-								<p>You can trust us. we only send promo offers, not a single spam.</p>
-								<div id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
-										<div class="form-group row" style="width: 100%">
-											<div class="col-lg-8 col-md-12">
-												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-											</div> 
-										
-											<div class="col-lg-4 col-md-12">
-												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
-											</div> 
-										</div>		
-										<div class="info"></div>
-									</form>
-								</div>		
-							</div>
-						</div>
-						<div class="col-lg-3  col-md-12">
-							<div class="single-footer-widget mail-chimp">
-								<h6 class="mb-20">Instragram Feed</h6>
-								<ul class="instafeed d-flex flex-wrap">
-									<li><img src="img/i1.jpg" alt=""></li>
-									<li><img src="img/i2.jpg" alt=""></li>
-									<li><img src="img/i3.jpg" alt=""></li>
-									<li><img src="img/i4.jpg" alt=""></li>
-									<li><img src="img/i5.jpg" alt=""></li>
-									<li><img src="img/i6.jpg" alt=""></li>
-									<li><img src="img/i7.jpg" alt=""></li>
-									<li><img src="img/i8.jpg" alt=""></li>
-								</ul>
-							</div>
-						</div>						
-					</div>
-
 					<div class="row footer-bottom d-flex justify-content-between">
 						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
 					</div>
 				</div>
 			</footer>
-			<!-- End footer Area -->		
+			<!-- End footer Area -->
+
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -607,11 +572,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/owl.carousel.min.js"></script>			
 			<script src="js/jquery.sticky.js"></script>
 			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>		
-			<script src="js/mail-script.js"></script>	
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/mail-script.js"></script>				
 			<script src="js/main.js"></script>	
 		</body>
 	</html>
-
-
-
